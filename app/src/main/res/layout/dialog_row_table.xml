@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#b2b0b0"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dialog_close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_close_24" />
+
+        <TextView
+            android:id="@+id/name_table_add"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/collect_table"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/collect" />
+
+    <Button
+        android:id="@+id/edit_table"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/edit" />
+
+    <Button
+        android:id="@+id/remove_table"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/remove" />
+</LinearLayout>

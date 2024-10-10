@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "742368715809",
+    "firebase_url": "https://las-esteras-default-rtdb.firebaseio.com",
+    "project_id": "las-esteras",
+    "storage_bucket": "las-esteras.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742368715809:android:c124bbd859f3c144e72f60",
+        "android_client_info": {
+          "package_name": "com.example.lasesteras"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742368715809-tp90io1gfba2ikr0333dfq3o1t2kfjvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByqZM1FhkXDxDk75VYVyI8gHiinLi5DL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742368715809-tp90io1gfba2ikr0333dfq3o1t2kfjvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

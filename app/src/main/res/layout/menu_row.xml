@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_sep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_menu_rey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_sep">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_rey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/name_plate_row"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="1dp"
+                android:layout_toEndOf="@+id/Active_Check"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_plus_less"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/name_plate_row"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/add_id"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="false"
+                    android:contentDescription="@string/app_name"
+                    android:saveEnabled="false"
+                    android:src="@drawable/ic_baseline_add_24" />
+
+                <TextView
+                    android:id="@+id/cant_id"
+                    android:layout_width="25dp"
+                    android:layout_height="25sp"
+                    android:layout_below="@id/add_id"
+                    android:layout_centerHorizontal="true"
+                    android:background="#eb2f06"
+                    android:gravity="center"
+                    android:text="@string/_0"
+                    android:textColor="#FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/remove_id"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/cant_id"
+                    android:layout_centerHorizontal="true"
+                    android:background="#fff"
+                    android:layout_marginTop="5dp"
+                    android:clickable="false"
+                    android:contentDescription="@string/app_name"
+                    android:saveEnabled="false"
+                    android:src="@drawable/ic_baseline_remove_24" />
+
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/Active_Check"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/totalPlate_"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:text="@string/s_0_00"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
